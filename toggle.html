@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Mode Dark Mode Toggle</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="container" class="container darkMode">
+        
+        <p id="lightPara" class="fontInactive">Light</p>
+        <div id="dark" onclick="lightMode()">
+            <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_2_28)">
+                
+                <rect x="40" y="60" width="128" height="80" rx="40" fill="#0B1019"/>
+                <path d="M156 100C156 114.359 144.359 126 130 126C115.641 126 103.403 119.045 103.403 104.686C141.403 112.186 139 96.5 130 74C144.5 74 156 85.6406 156 100Z" fill="#D9D9D9"/>
+                <path d="M66.0489 74.927C66.3483 74.0057 67.6517 74.0057 67.9511 74.927L68.3471 76.1459C68.481 76.5579 68.8649 76.8369 69.2981 76.8369H70.5797C71.5484 76.8369 71.9512 78.0765 71.1675 78.6459L70.1307 79.3992C69.7802 79.6538 69.6335 80.1052 69.7674 80.5172L70.1634 81.7361C70.4628 82.6574 69.4083 83.4235 68.6246 82.8541L67.5878 82.1008C67.2373 81.8462 66.7627 81.8462 66.4122 82.1008L65.3754 82.8541C64.5917 83.4235 63.5372 82.6574 63.8366 81.7361L64.2326 80.5172C64.3665 80.1052 64.2198 79.6538 63.8693 79.3992L62.8325 78.6459C62.0488 78.0765 62.4516 76.8369 63.4203 76.8369H64.7019C65.1351 76.8369 65.519 76.5579 65.6529 76.1459L66.0489 74.927Z" fill="#D9D9D9"/>
+                <path d="M91.8204 117.396C92.4251 117.396 92.9611 117.006 93.148 116.431C93.4161 115.606 94.5839 115.606 94.852 116.431C95.0389 117.006 95.5749 117.396 96.1796 117.396C97.0475 117.396 97.4083 118.506 96.7062 119.017C96.217 119.372 96.0123 120.002 96.1991 120.577C96.4673 121.403 95.5226 122.089 94.8205 121.579C94.3312 121.223 93.6688 121.223 93.1795 121.579C92.4774 122.089 91.5327 121.403 91.8009 120.577C91.9877 120.002 91.783 119.372 91.2938 119.017C90.5916 118.506 90.9525 117.396 91.8204 117.396Z" fill="#D9D9D9" stroke="black" stroke-width="0.5"/>
+                <circle cx="65" cy="106" r="2" fill="#D9D9D9"/>
+                <circle cx="86" cy="88" r="2" fill="#D9D9D9"/>
+                <circle cx="101" cy="70" r="2" fill="#D9D9D9"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_2_28" x="0" y="0" width="208" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_28"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_28" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+        </div>
+            
+        <div class="lightMode" id="light" onclick="darkMode()">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                
+                <rect x="36" y="60" width="128" height="80" rx="40" fill="#88B0FC"/>
+                <circle cx="74" cy="100" r="26" fill="#D9D9D9"/>
+                <circle cx="133" cy="74" r="5" fill="#D9D9D9"/>
+                <circle cx="117" cy="91" r="3" fill="#D9D9D9"/>
+            </svg>
+                
+        </div>
+        <p id="darkPara" class="">Dark</p>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
